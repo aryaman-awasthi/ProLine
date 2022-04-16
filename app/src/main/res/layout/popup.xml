@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:cardBackgroundColor="@color/background_secondary"
+        app:cardCornerRadius="5sp"
+        app:cardElevation="1dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/primaryOpposite">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Step"
+                    android:textColor="@color/textPrimary"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/sfdisplaysemibold"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edit_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:background="@drawable/edittextbg"
+                android:padding="10sp"
+                android:fontFamily="@font/sfmedium"
+                android:hint="Step"
+                android:textColorHint="@color/textSecondary"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/submit_sb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Okay"
+                android:layout_margin="20sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sfmedium"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_outline"
+                android:textColor="@color/primary"
+                />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

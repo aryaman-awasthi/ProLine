@@ -7,4 +7,31 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Main colors-->
+
+    <color name="primary">#000000</color>
+
+    <color name="primaryOpposite">#ffff</color>
+
+    <color name="background">#ffff</color>
+    <color name="background_secondary">#E9E9E9</color>
+
+    <color name="accent_primary">#0050FF</color>
+    <color name="accent_secondary">#006FFF</color>
+
+    <color name="editTextColorOnFocus">#ffff</color>
+    <color name="editTextColorNotOnFocus">#ffff</color>
+    <color name="Outline">#707070</color>
+
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#3D3D3D</color>
+
+    <color name="button">#000000</color>
+    <color name="button_secondary">#ffff</color>
+    <color name="button_accent">#0050FF</color>
+    <color name="roundButton">#2E000000</color>
+
+    <color name="err">#FF0000</color>
+
 </resources>

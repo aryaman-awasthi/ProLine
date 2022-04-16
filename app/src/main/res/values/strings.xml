@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">ProLine-AppCode</string>
+    <string name="app_name">proLine</string>
+    <string name="app_name_lowercase">proLine</string>
+
+    <string name="sub_text_ws">Experience a whole new way of doing business!</string>
+    <string name="text_ws">Elevate your business with proLine!</string>
+
+    <string name="sample_email">jondoe@gmail.com</string>
+    <string name="password_hint">password</string>
+    <string name="f_pass_pre_text">trouble getting in?/</string>
+    <string name="f_pass">Reset Password</string>
+    <string name="sup">Create Account!</string>
+    <string name="sup_pre_text">don\'t have an account?</string>
+
+
+    <string name="sup_screen_text">Create an account it\'s freeeeeee!</string>
+    <string name="sample_name">Jon Doe</string>
+    <string name="sin_pre_text">already have an account?/</string>
+    <string name="sin">SignIn</string>
+    <string name="email_regex"><![CDATA[^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$]]></string>
+    <string name="phone_no_regex">^(\\+91[\\-\\s]?)?[0]?(91)?[789]\\d{9}$</string>
+    <string name="title_activity_email_verifier">EmailVerifier</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="account_creation_text">Your account has been created. To access your account first verify your email through the link sent to your registered email address!</string>
+    <string name="email_verifier_string">To use your account you need to verify your email address using the link sent to your registered email address!\nDidn\'t get the mail?</string>
+    <string name="forgot_pass_text">We are are sorry to here that you forgot your password!\nEnter your email to change your password!</string>
 </resources>

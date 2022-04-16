@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "776337351618",
+    "project_id": "proline-88298",
+    "storage_bucket": "proline-88298.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776337351618:android:20f6d71942cf91af5bec5b",
+        "android_client_info": {
+          "package_name": "com.example.proline_appcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776337351618-uo5brkh2i4tql1j3njot8m47eambvd7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8efvGrcdc2zDGCsX21lZBmV9Ou7n1ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776337351618-uo5brkh2i4tql1j3njot8m47eambvd7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
