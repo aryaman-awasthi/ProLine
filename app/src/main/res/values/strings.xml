@@ -31,4 +31,6 @@
     <string name="account_creation_text">Your account has been created. To access your account first verify your email through the link sent to your registered email address!</string>
     <string name="email_verifier_string">To use your account you need to verify your email address using the link sent to your registered email address!\nDidn\'t get the mail?</string>
     <string name="forgot_pass_text">We are are sorry to here that you forgot your password!\nEnter your email to change your password!</string>
+    <string name="add_product_sub_text">Add details of the product!</string>
+    <string name="wrong_details">Uh! Oh! wrong details!</string>
 </resources>

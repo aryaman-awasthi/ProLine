@@ -5,9 +5,24 @@
       <map>
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/accentbuttonbg.xml" value="0.1" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/button_outline.xml" value="0.2385" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/buttonbg.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/buttonbg_small.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/buttonbgdashboard.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/buttonbgsecondary.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/edittext_outline.xml" value="0.345" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/edittextbg.xml" value="0.217" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/ic_barcode.xml" value="0.1" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/ic_launcher_logo_foreground.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/ic_rightarrow.xml" value="0.345" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/logo.xml" value="0.2455" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/logodark.xml" value="0.2455" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/red_button_outline.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/rightarrow.xml" value="0.345" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_add_product.xml" value="0.33" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_add_product_ui.xml" value="0.371875" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_billing.xml" value="0.3070652173913043" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_check_inventory.xml" value="0.371875" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_dashboard.xml" value="0.371875" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_forgot_password.xml" value="0.3578125" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_main.xml" value="0.18059777102330293" />
@@ -15,6 +30,13 @@
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_welcome_screen.xml" value="0.33" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/err_snackbar.xml" value="0.67" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/layout_barcode.xml" value="0.2807971014492754" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/layout_product.xml" value="0.44490644490644493" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/loading_message_layout.xml" value="0.371875" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/popup.xml" value="0.371875" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/success_popup_message.xml" value="0.67" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1995" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1995" />
       </map>
     </option>
   </component>

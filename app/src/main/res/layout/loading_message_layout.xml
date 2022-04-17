@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        app:cardBackgroundColor="@color/background_secondary"
-        app:cardCornerRadius="5sp"
+        app:cardBackgroundColor="@color/dashBoardButtonColor"
+        app:cardCornerRadius="10sp"
         app:cardElevation="1dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true">
@@ -19,13 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="vertical"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:padding="10dp">
 
             <com.airbnb.lottie.LottieAnimationView
-                android:layout_width="200sp"
-                android:layout_height="200sp"
-                app:lottie_rawRes="@raw/signup"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                app:lottie_rawRes="@raw/loadingcircle"
                 app:lottie_autoPlay="true"
                 android:layout_gravity="center_horizontal"
                 app:lottie_loop="true"/>
@@ -34,12 +35,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Loading, please wait!"
-                android:fontFamily="@font/sfmedium"
+                android:fontFamily="@font/ibmplexsansregular"
                 android:textColor="@color/textPrimary"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:textAlignment="center"
+                android:layout_marginStart="10dp"
                 />
 
 

@@ -6,4 +6,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="stroke_width_on_focus">3dp</dimen>
+    <dimen name="dashboard_button_corner_radius">10dp</dimen>
 </resources>

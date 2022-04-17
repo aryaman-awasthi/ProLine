@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Billing"
+    android:background="@color/background"
+    android:id="@+id/billing">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/logoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/uraniabold"
+                    android:text="@string/app_name_lowercase"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/ibmplexsanssemibold"
+                android:text="Add Product"
+                android:textColor="@color/textPrimary"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsansregular"
+                android:text="@string/add_product_sub_text"
+                android:textColor="@color/textSecondary"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/barCode_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_outline"
+                    android:fontFamily="@font/ibmplexsansregular"
+                    android:hint="Barcode Reading"
+                    android:padding="20sp"
+                    android:singleLine="true"
+                    android:textColor="@color/textPrimary"
+                    android:textColorHint="@color/textSecondary"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonbgdashboard"
+                    android:gravity="center"
+                    android:onClick="scanCode"
+                    android:orientation="horizontal"
+                    android:padding="20sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:src="@drawable/ic_barcode" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edittext_outline"
+                android:fontFamily="@font/ibmplexsansregular"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="20sp"
+                android:singleLine="true"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textSecondary"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonbg"
+
+                android:fontFamily="@font/ibmplexsansregular"
+                android:gravity="left"
+                android:onClick="done"
+                android:padding="20sp"
+                android:text="Add Product"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryOpposite"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/accentbuttonbg"
+                android:drawableRight="@drawable/rightarrow"
+                android:fontFamily="@font/ibmplexsansregular"
+                android:gravity="left"
+                android:onClick="makeBill"
+                android:padding="20sp"
+                android:text="Create Bill"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryOpposite"
+                android:textSize="20sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
