@@ -52,14 +52,14 @@
                 android:layout_height="wrap_content"
                 android:text="SignUp"
                 android:textColor="@color/textPrimary"
-                android:fontFamily="@font/sanfranciscobold"
+                android:fontFamily="@font/ibmplexsanssemibold"
                 android:textSize="45sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sup_screen_text"
                 android:textColor="@color/textSecondary"
-                android:fontFamily="@font/sanfrancisco"
+                android:fontFamily="@font/ibmplexsansregular"
                 android:textSize="20sp"/>
 
             <!--Text Fields-->
@@ -148,7 +148,8 @@
                 android:fontFamily="@font/sanfrancisco"
                 android:textAllCaps="false"
                 android:onClick="signUp_supS"
-                android:layout_marginTop="20sp"/>
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"/>
 
             <!--Forgot Password-->
             <LinearLayout
@@ -169,7 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sin"
-                    android:fontFamily="@font/sanfranciscobold"
+                    android:fontFamily="@font/ibmplexsanssemibold"
                     android:textColor="@color/accent_secondary"
                     android:onClick="sin_sup"
                     android:textSize="15sp"/>

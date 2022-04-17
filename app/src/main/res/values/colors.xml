@@ -17,8 +17,8 @@
     <color name="background">#ffff</color>
     <color name="background_secondary">#E9E9E9</color>
 
-    <color name="accent_primary">#0050FF</color>
-    <color name="accent_secondary">#006FFF</color>
+    <color name="accent_primary">#f60</color>
+    <color name="accent_secondary">#1F80FF</color>
 
     <color name="editTextColorOnFocus">#ffff</color>
     <color name="editTextColorNotOnFocus">#ffff</color>
@@ -29,7 +29,7 @@
 
     <color name="button">#000000</color>
     <color name="button_secondary">#ffff</color>
-    <color name="button_accent">#0050FF</color>
+    <color name="button_accent">#f60</color>
     <color name="roundButton">#2E000000</color>
 
     <color name="err">#FF0000</color>

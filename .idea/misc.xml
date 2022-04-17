@@ -6,12 +6,14 @@
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/accentbuttonbg.xml" value="0.1" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/button_outline.xml" value="0.2385" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/edittextbg.xml" value="0.217" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/logo.xml" value="0.2455" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/drawable/logodark.xml" value="0.2455" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_forgot_password.xml" value="0.3578125" />
-        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_log_in.xml" value="0.371875" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_main.xml" value="0.18059777102330293" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
-        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_welcome_screen.xml" value="0.25" />
+        <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/activity_welcome_screen.xml" value="0.33" />
         <entry key="..\:/Work/Apps/ProLine/ProLineAppCode/app/src/main/res/layout/err_snackbar.xml" value="0.67" />
       </map>
     </option>
