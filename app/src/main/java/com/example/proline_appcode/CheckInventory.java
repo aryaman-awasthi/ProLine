@@ -55,14 +55,14 @@ public class CheckInventory extends AppCompatActivity {
         recyclerView.setAdapter(productsAdapter);
 
         loading();
-        EventChangeListner();
+        EventChangeListener();
     }
 
-    private void EventChangeListner() {
+    private void EventChangeListener() {
 
         FirebaseUser user = mAuth.getCurrentUser();
         String userID = user.getUid();
-        db.collection("inventory").document(userID).collection("inventory")
+        db.collection("Root").document(userID).collection("inventory")
             .addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -87,7 +87,7 @@ public class CheckInventory extends AppCompatActivity {
 
     void show_err_snackBar(String err_message){
 
-        checkInv = findViewById(R.id.addProductLayout);
+        checkInv = findViewById(R.id.checkInv);
 
         Snackbar err_snackbar = Snackbar.make(checkInv, "", Snackbar.LENGTH_INDEFINITE);
         View custom_snackbar_view = getLayoutInflater().inflate(R.layout.err_snackbar, null);
@@ -106,6 +106,8 @@ public class CheckInventory extends AppCompatActivity {
         err_snackbar.show();
 
     }
+
+
     private void loading(){
         dialog.setContentView(R.layout.loading_message_layout);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

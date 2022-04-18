@@ -33,4 +33,5 @@
     <string name="forgot_pass_text">We are are sorry to here that you forgot your password!\nEnter your email to change your password!</string>
     <string name="add_product_sub_text">Add details of the product!</string>
     <string name="wrong_details">Uh! Oh! wrong details!</string>
+    <string name="create_bill">Create Bill.</string>
 </resources>

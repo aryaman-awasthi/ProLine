@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        app:cardBackgroundColor="@color/dashBoardButtonColor"
-        app:cardCornerRadius="5sp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/corner_radius"
         app:cardElevation="1dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true">
@@ -35,9 +35,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/wrong_details"
                 android:fontFamily="@font/ibmplexsansitalic"
-                android:textColor="@color/textPrimary"
+                android:textColor="@color/primaryOpposite"
                 android:layout_gravity="center_vertical"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:layout_margin="10dp"
                 android:layout_weight="3"/>
             <Button
@@ -46,11 +46,12 @@
                 android:layout_height="wrap_content"
                 android:text="Okay"
                 android:textAllCaps="false"
-                android:fontFamily="@font/ibmplexsansregular"
+                android:fontFamily="@font/ibmplexsanssemibold"
                 android:layout_gravity="center_vertical"
-                android:background="@drawable/buttonbg"
-                android:textColor="@color/primaryOpposite"
-                android:layout_weight="1"/>
+                android:background="@drawable/buttonbg_small"
+                android:textColor="@color/primary"
+                android:layout_weight="1"
+                android:textSize="17dp"/>
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

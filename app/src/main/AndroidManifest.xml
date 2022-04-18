@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProLineAppCode">
         <activity
+            android:name=".ShowBill"
+            android:exported="false" />
+        <activity
+            android:name=".AddCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerPhone"
+            android:exported="false" />
+        <activity
             android:name=".MakeFinalBill"
             android:exported="false" />
         <activity

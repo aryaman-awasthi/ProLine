@@ -19,11 +19,13 @@ import android.widget.Toast;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -40,8 +42,10 @@ public class Billing extends AppCompatActivity {
     FirebaseFirestore fStore;
     RecyclerView recyclerView;
     ArrayList<String> barcodes;
-    ArrayList<String> qty;
+    ArrayList<Integer> qty;
     barcodeAdapter barcodeAdapter;
+
+    ArrayList<Product> productArrayList;
 
 
 
@@ -72,9 +76,10 @@ public class Billing extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        productArrayList = new ArrayList<Product>();
         barcodes = new ArrayList<String>();
 
-        barcodeAdapter = new barcodeAdapter(Billing.this, barcodes);
+        barcodeAdapter = new barcodeAdapter(Billing.this, productArrayList);
         recyclerView.setAdapter(barcodeAdapter);
 
     }
@@ -86,15 +91,9 @@ public class Billing extends AppCompatActivity {
             show_err_snackBar("Enter Barcode!");
         }
         else {
-            barcodes.add(text);
-            barcodeAdapter.notifyDataSetChanged();
-            bar_Code_et.setHint("Barcode");
-            bar_Code_et.setText("");
+            getData(text);
         }
     }
-
-
-
 
     public void scanCode(View view) {
         IntentIntegrator intentIntegrator = new IntentIntegrator(Billing.this);
@@ -125,7 +124,6 @@ public class Billing extends AppCompatActivity {
         }
     }
 
-
     private void loading(){
         dialog.setContentView(R.layout.loading_message_layout);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -153,10 +151,49 @@ public class Billing extends AppCompatActivity {
 
     }
 
-
     public void makeBill(View view) {
         Intent intent = new Intent(Billing.this, MakeFinalBill.class);
         intent.putStringArrayListExtra("Barcodes", barcodes);
 
+    }
+
+    private void getData(String barcode){
+        bar_Code_et.setText("");
+        FirebaseUser user = mAuth.getCurrentUser();
+        String userID = user.getUid();
+        DocumentReference documentReference = fStore.collection("Root").document(userID).collection("inventory").document(barcode);
+        documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                if (error != null) {
+                    System.err.println("Listen failed: " + error);
+                    show_err_snackBar(error.getMessage());
+                    return;
+                }
+
+                if (value != null && value.exists()) {
+                    System.out.println("Current data: " + value.getData());
+                    Map<String, Object> obj = value.getData();
+                    Product product = new Product();
+                    product.productName = (String) obj.get("productName");
+                    product.barCode = (String) obj.get("barCode");
+                    product.purchasePrice = (String) obj.get("purchasePrice");
+                    product.discount = Double.parseDouble(obj.get("discount").toString());
+                    product.sellingPrice = (String) obj.get("sellingPrice");
+                    product.quantity = Double.parseDouble(obj.get("quantity").toString());
+                    product.tax = Double.parseDouble(obj.get("tax").toString());
+
+                    productArrayList.add(product);
+
+                    barcodeAdapter.notifyDataSetChanged();
+
+
+                } else {
+                    show_err_snackBar("Enter valid barcode");
+
+                    System.out.print("Current data: null");
+                }
+            }
+        });
     }
 }

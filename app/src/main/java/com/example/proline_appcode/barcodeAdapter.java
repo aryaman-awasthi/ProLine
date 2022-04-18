@@ -9,19 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class barcodeAdapter extends RecyclerView.Adapter<barcodeAdapter.MyViewHolder> {
 
 
     Context context;
-    ArrayList<String> barcode;
+    ArrayList<Product> productArrayList;
 
-    public barcodeAdapter(Context context, ArrayList<String> barcode) {
+    public barcodeAdapter(Context context, ArrayList<Product> barcode) {
         this.context = context;
-        this.barcode = barcode;
+        this.productArrayList = barcode;
     }
 
     @NonNull
@@ -33,22 +31,30 @@ public class barcodeAdapter extends RecyclerView.Adapter<barcodeAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull barcodeAdapter.MyViewHolder holder, int position) {
+        Product product = productArrayList.get(position);
         holder.number.setText(String.valueOf(position+1)+". ");
-        holder.barcode_et.setText(barcode.get(position));
+        holder.barcode_et.setText(product.getBarCode());
+        holder.name.setText(product.getProductName());
+        holder.price.setText(product.getSellingPrice());
+        holder.disc.setText(String.valueOf(product.getDiscount()));
+
     }
 
     @Override
     public int getItemCount() {
-        return barcode.size();
+        return productArrayList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView number, barcode_et;
+        TextView number, barcode_et, name, price, disc;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             number = itemView.findViewById(R.id.index);
             barcode_et = itemView.findViewById(R.id.barcode);
+            name = itemView.findViewById(R.id.name);
+            price = itemView.findViewById(R.id.price);
+            disc = itemView.findViewById(R.id.discount);
         }
     }
 }

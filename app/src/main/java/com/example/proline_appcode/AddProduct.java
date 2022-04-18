@@ -121,7 +121,6 @@ public class AddProduct extends AppCompatActivity {
         return true;
     }
 
-
     public void scanCode(View view) {
         IntentIntegrator intentIntegrator = new IntentIntegrator(AddProduct.this);
         //Set Prompt text
@@ -135,6 +134,7 @@ public class AddProduct extends AppCompatActivity {
         //Initiate Scan
         intentIntegrator.initiateScan();;
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -150,7 +150,6 @@ public class AddProduct extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "OOPS", Toast.LENGTH_LONG).show();
         }
     }
-
 
     private void loading(){
         dialog.setContentView(R.layout.loading_message_layout);
@@ -182,7 +181,7 @@ public class AddProduct extends AppCompatActivity {
     private void addProduct(HashMap<String, Object> data, String barcode){
         FirebaseUser user = mAuth.getCurrentUser();
         String userID = user.getUid();
-        DocumentReference documentReference = fStore.collection("inventory").document(userID).collection("inventory").document(barcode);
+        DocumentReference documentReference = fStore.collection("Root").document(userID).collection("inventory").document(barcode);
         documentReference.set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
